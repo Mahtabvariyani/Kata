@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hoisting In JavaScript</h1>
+    <p id="demo"></p>
+    <p id="Some"></p>
+
+    <script>
+        /* First Option */
+      x = 5; 
+
+      elem = document.getElementById("demo"); 
+      elem.innerHTML = x; 
+
+      var x; 
+
+/* Second Option */
+      var m;
+      m=6;
+
+      elem = document.getElementById("Some");
+      elem.innerHTML = m;   
+    </script>
+  </body>
+</html>

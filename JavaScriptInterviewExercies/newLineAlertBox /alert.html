@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <p>
+        To add a new line to the content of alert box we are going to use \n
+        backslash(n). Example 1: This example adds \n between the 2 lines to the
+        text of alert box.
+      </p>
+      <h1>Alert Box</h1>
+      <p>
+        To see the alert box <br />
+        <button onclick="openBox()">Click here</button>
+      </p>
+    </section>
+
+    <script>
+      let text = "This is the first Line and \n This is the Second Line";
+
+      function openBox() {
+        alert(text);
+      }
+    </script>
+  </body>
+</html>
