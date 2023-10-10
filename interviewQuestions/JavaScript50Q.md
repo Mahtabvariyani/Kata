@@ -139,8 +139,8 @@ $18-how create cookie using javaScript?
 
 
             or document.cookie = "key1 = value1; key2 = value2; expires = date";
-
-$19-Q20. How to read a cookie using JavaScript?
+19
+$-How to read a cookie using JavaScript?
            
 
        document.cookie = "session=123456789";
@@ -152,8 +152,8 @@ $19-Q20. How to read a cookie using JavaScript?
 
       readAllCookies();
 
-
-$20-Explain call(), apply() and, bind() methods.
+20
+$-Explain call(), apply() and, bind() methods.
 
      first is call() method which is working normall as calling a function 
             function greet(name) {
@@ -179,7 +179,8 @@ applay method () is similar to call method it invokes the function imidiatly but
                console.log(result); // Output: 12
                
 
-in the bind method   it makes a new whole function and it call be called like this      function greet() {
+in the bind method   it makes a new whole function and it call be called like this   
+              function greet() {
                  console.log(`Hello, ${this.name}! I am ${this.job}.`);
                }
                
@@ -190,8 +191,89 @@ in the bind method   it makes a new whole function and it call be called like th
                
                const greetPerson = greet.bind(person);
                greetPerson();
-               // Output: Hello, Alice! I am designer.
-               
-$21-Explain Hoisting in javascript.
+               // Output: Hello, Alice! I am designer. 
+ 
+ 
+ 
+ 21              
+$-Explain Hoisting in javascript.
 
 (check other files)
+
+
+
+22
+$-diffrence between test() and exec()
+
+(check the files for it)
+
+23
+$-what is the diffrence between var and let 
+
+
+the diffrence 
+var {
+   hoisting:they are hoisted
+   declration:they can be redecleared
+   scope:they are acceseble throuout the functions 
+}
+
+let{
+   hoisting:they are not hoisted 
+   scope:block  scope
+   declaration:they arent be redecrealr
+}
+
+24
+$-Why do we use the word “debugger” in javascript?
+
+
+the word itself come fron old school engeniering and that mean the coders get help from this fiture and stop cod efrom running and look at the variables and analyse the whole code and find the problem and fix it 
+
+
+25
+$Explain Implicit Type Coercion in javascript.
+
+
+
+26
+$what is encapsulation?
+
+for knowing the encapsulation we have to know first what is IIFE
+Script design pattern to execute the function immidietly
+it stands for `immediately Invode Function Expression ´`
+
+for example 
+
+
+`(function () {
+  /// This code is wrapped in an IIFE
+  var localVar = "I am a local variable";
+  console.log(localVar);
+})();
+/// The IIFE is executed immediately after its definition`
+
+now we know what is the IIFE we can go throw the Excapsulating
+
+
+(check the file )
+
+
+27
+$What is Implicit Type Coercion in JavaScript?
+
+it refers to conversion of a data Type to another data TYpe
+by JavaScript Engine itself 
+so in the operation which are 2 diffrent data Types javaScript converts one to another so here is the example of it 
+
+const num = 5;
+const str = "10";
+
+const result = num + str;
+
+console.log(result); // Output: "510"
+ the number as num and a string "10" and the output is tring "510"
+
+
+ 
+
